@@ -7,19 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="text/css" href="./styles.css" rel="stylesheet"/>
    
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+    <script src="script.js"></script>
   </head>
  
   <body style="background-color:grey;">
     
-    <model-viewer src="Fren-Base Rig.glb" shadow-intensity="1" camera-controls>
-      <div class="progress-bar hide" slot="progress-bar">
-          <div class="update-bar"></div>
-      </div>
-    </model-viewer>  
-    <script src="script.js"></script>
+    <div class="box">
+      <model-viewer src="Fren-Base Rig.glb" shadow-intensity="1" camera-controls>
+        <div class="progress-bar hide" slot="progress-bar">
+            <div class="update-bar"></div>
+        </div>  
+      </model-viewer>  
+    </div> 
     
-   
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   </body>
 </html>
